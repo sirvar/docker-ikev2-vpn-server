@@ -11,6 +11,7 @@ RUN (cd /etc && ln -s /config/ipsec.secrets .)
 
 ADD ./etc/* /etc/
 ADD ./bin/* /usr/bin/
+ADD ./plugins/* /etc/strongswan.d/charon/
 
 VOLUME /etc
 VOLUME /config
